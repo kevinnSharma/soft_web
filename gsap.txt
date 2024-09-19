@@ -1,0 +1,12 @@
+import { useRef, React } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+function Loading() {
+  useGSAP(() => {
+    gsap.from("#name", {
+      x: 300,
+    });
+   
+  });
+}
